@@ -1,1 +1,1 @@
-# Growth-Wiz-Client
+# Growth-Wiz
