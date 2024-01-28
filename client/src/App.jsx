@@ -8,7 +8,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import "./App.css";
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import ChildForm from "./pages/ChildForm";
 import Blogs from "./pages/Blogs";
 import Navbar from "./components/Navbar";
@@ -24,7 +24,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Navbar />
         <Routes>
-          <Route path="/" Component={Home} />
+          <Route path="/" Component={HomePage} />
           <Route path="/childform" Component={ChildForm} />{" "}
           {/* page2- skills */}
           <Route path="/activity" Component={Activity} />
