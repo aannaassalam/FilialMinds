@@ -1,17 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import { Button } from "antd";
 
 import ChildInfo from "../components/ChildInfo";
 import ChildSkill from "../components/ChildSkill";
 
 const ChildForm = () => {
   const [page, setPage] = useState(1);
-
-  const updatePage = () => {
-    setPage(!page);
-  };
+  const [input1, setInput1] = useState({}); // holds the first page input values
+  const [input2, setInput2] = useState({}); // holds the second page input values
 
   return (
     <>
@@ -22,11 +19,21 @@ const ChildForm = () => {
           alt=""
         />
         {page ? (
-          <ChildInfo page={page} setPage={setPage} />
+          <ChildInfo page={page} setPage={setPage} setInput1={setInput1} />
         ) : (
-          <ChildSkill page={page} setPage={setPage} />
+          <ChildSkill page={page} setPage={setPage} setInput2={setInput2} />
         )}
       </div>
+      {/* <Button
+        type="primary"
+        onClick={() => {
+          console.log(input1);
+          console.log(input2);
+        }}
+        className="bg-blue-600"
+      >
+        Back
+      </Button> */}
     </>
   );
 };
