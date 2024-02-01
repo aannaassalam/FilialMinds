@@ -1,0 +1,49 @@
+{
+  "title": "Emotional Reactivity",
+  "content": [
+    {
+      "type": "mcq",
+      "id": "Question 1",
+      "desc": "Do you like going to school?",
+      "opt": [
+        { "no": "A", "opt": "Yes" },
+        { "no": "B", "opt": "No" },
+        { "no": "C", "opt": "Sometimes" }
+      ],
+      "img": "/activity/high-school-concept-illustration.png"
+    },
+    {
+      "type": "mcq",
+      "id": "Question 2",
+      "desc": "Do you like going to gym?",
+      "opt": [
+        { "no": "A", "opt": "Yes" },
+        { "no": "B", "opt": "No" },
+        { "no": "C", "opt": "Sometimes" }
+      ],
+      "img": "/activity/high-school-concept-illustration.png"
+    },
+    {
+      "type": "mcq",
+      "id": "Question 3",
+      "desc": "Do you like going to swim?",
+      "opt": [
+        { "no": "A", "opt": "Yes" },
+        { "no": "B", "opt": "No" },
+        { "no": "C", "opt": "Sometimes" }
+      ],
+      "img": "/activity/high-school-concept-illustration.png"
+    },
+    {
+      "type": "mcq",
+      "id": "Question 4",
+      "desc": "Do you like going to tution?",
+      "opt": [
+        { "no": "A", "opt": "Yes" },
+        { "no": "B", "opt": "No" },
+        { "no": "C", "opt": "Sometimes" }
+      ],
+      "img": "/activity/high-school-concept-illustration.png"
+    }
+  ]
+}
