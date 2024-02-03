@@ -7,7 +7,7 @@ import Mcq from "../components/Activity/Mcq";
 import Para from "../components/Activity/Para";
 import Img from "../components/Activity/Img";
 import Time from "../components/Activity/Time";
-import Rate from "../components/Activity/Rate";
+import Rating from "../components/Activity/Rating";
 import questionData from "../assets/natureCollage.json";
 
 console.log(questionData);
@@ -32,7 +32,7 @@ const Activity = () => {
       case "time":
         return <Time question={question} content={content} />;
       case "rate":
-        return <Rate question={question} content={content} />;
+        return <Rating question={question} content={content} />;
       default:
         return null;
     }
