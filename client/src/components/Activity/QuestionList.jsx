@@ -6,7 +6,7 @@ const QuestionList = ({ question, setQuestion, questionData }) => {
       <div className="flex flex-col justify-center h-full gap-4 text-black">
         {questionData.content.map((content) => (
           <button
-            onClick={() => setQuestion(content.id)}
+            onClick={() => setQuestion(content)}
             className={
               question === content.id
                 ? "rounded-lg px-3 py-2 shadow-md bg-yellow-500"
