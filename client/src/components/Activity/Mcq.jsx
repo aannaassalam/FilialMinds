@@ -1,6 +1,12 @@
-import React from 'react'
+import React from "react";
+import { useState } from "react";
 
-const Mcq = ({ option, updateOption, question, content }) => {
+const Mcq = ({ question, content }) => {
+  const [option, setOption] = useState("");
+  const updateOption = (e) => {
+    setOption(e.target.value);
+    console.log(e.target.value);
+  };
   return (
     <>
       {content.id === question && (
@@ -43,4 +49,4 @@ const Mcq = ({ option, updateOption, question, content }) => {
   );
 };
 
-export default Mcq
+export default Mcq;

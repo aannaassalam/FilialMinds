@@ -4,19 +4,15 @@ import { useLocation } from "react-router-dom";
 import ActivityLink from "../components/Activity/ActivityLink";
 import QuestionList from "../components/Activity/QuestionList";
 import Mcq from "../components/Activity/Mcq";
+import Para from "../components/Activity/Para";
 import questionData from "../assets/questionData.json";
 
 console.log(questionData);
 
 const Activity = () => {
-  const [option, setOption] = useState("");
   const [question, setQuestion] = useState("Question 1");
   const location = useLocation();
   const title = "Emotional Reactivity";
-  const updateOption = (e) => {
-    setOption(e.target.value);
-    console.log(e.target.value);
-  };
   return (
     <>
       <div className=" mt-16 flex bg-gray-200 text-black">
@@ -28,25 +24,22 @@ const Activity = () => {
             </h1>
             {questionData.content.map((content) => {
               if (content.type === "mcq") {
-                return (
-                  <Mcq
-                    option={option}
-                    updateOption={updateOption}
-                    question={question}
-                    content={content}
-                  />
-                );
+                return <Mcq question={question} content={content} />;
+              } else if (content.type === "para") {
+                return <Para question={question} content={content} />;
               } else {
               }
             })}
           </div>
         </div>
-        <QuestionList question={question} setQuestion={setQuestion} questionData={questionData} />
+        <QuestionList
+          question={question}
+          setQuestion={setQuestion}
+          questionData={questionData}
+        />
       </div>
     </>
   );
 };
-
-
 
 export default Activity;

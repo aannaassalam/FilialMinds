@@ -44,6 +44,12 @@
         { "no": "C", "opt": "Sometimes" }
       ],
       "img": "/activity/high-school-concept-illustration.png"
+    },
+    {
+      "type": "para",
+      "id": "Question 5",
+      "desc": "Write in 100 words, your average schoolday experience.",
+      "img": "/activity/high-school-concept-illustration.png"
     }
   ]
 }

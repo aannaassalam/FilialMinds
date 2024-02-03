@@ -13,6 +13,7 @@ import ChildForm from "./pages/ChildForm";
 import Blogs from "./pages/Blogs";
 import Navbar from "./components/Navbar";
 import ContactUs from "./pages/ContactUs";
+import ActivityHome from "./pages/ActivityHome";
 import Activity from "./pages/Activity";
 
 function App() {
@@ -23,17 +24,20 @@ function App() {
     <>
       <QueryClientProvider client={queryClient}>
         <Navbar />
-        <Routes>
-          <Route path="/" Component={HomePage} />
-          <Route path="/childform" Component={ChildForm} />{" "}
-          {/* page2- skills */}
-          <Route path="/activity" Component={Activity} />
-          <Route path="/blogs" Component={Blogs} />
-          <Route path="/contact-us" Component={ContactUs} />
-          {/* login page */}
-          {/* dashboard */}
-          {/* games */}
-        </Routes>
+        <div className="">
+          <Routes>
+            <Route path="/" Component={HomePage} />
+            <Route path="/childform" Component={ChildForm} />{" "}
+            {/* page2- skills */}
+            <Route path="/activity" Component={ActivityHome} />
+            <Route path="/activity/activity" Component={Activity} />
+            <Route path="/blogs" Component={Blogs} />
+            <Route path="/contact-us" Component={ContactUs} />
+            {/* login page */}
+            {/* dashboard */}
+            {/* games */}
+          </Routes>
+        </div>
       </QueryClientProvider>
     </>
   );
