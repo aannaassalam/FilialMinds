@@ -2,8 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Input } from "antd";
 
-const Textbox = ({ question, content, mainDesc }) => {
-  const [value, setValue] = useState("");
+const Textbox = ({ question, content, mainDesc, ans, setAns }) => {
   const { TextArea } = Input;
 
   return (
@@ -11,22 +10,22 @@ const Textbox = ({ question, content, mainDesc }) => {
       {content.id === question && (
         <div className="mx-10 my-4 p-10 shadow-lg rounded-2xl bg-white">
           <div className="flex flex-col gap-2">
-            <h1 className="-mb-1 text-yellow-400">
+            <h1 className="-mb-1 text-custL">
               Read the task carefully and answer the questions:
             </h1>
-            <h1 className="mb-4 text-yellow-400 text-sm italic font-medium">
+            <h1 className="mb-4 text-custY text-lg italic font-medium">
               {mainDesc}
             </h1>
-            <h1 className="text-yellow-400 text-xl font-bold">{content.id}</h1>
-            <h1 className="text-yellow-400 text-2xl">{content.desc}</h1>
+            <h1 className="text-custV text-2xl font-semibold">{content.id}</h1>
+            <h1 className="text-xl">{content.desc}</h1>
           </div>
           <div
             className="basis-1/2 w-full my-4 px-10 flex justify-between gap-20"
             // onChange={updateOption}
           >
             <TextArea
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
+              value={ans}
+              onChange={(e) => setAns(e.target.value)}
               placeholder="Start Typing"
               autoSize={{
                 minRows: 5,

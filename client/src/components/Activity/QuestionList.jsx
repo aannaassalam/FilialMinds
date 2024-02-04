@@ -30,7 +30,7 @@ const steps = [
   },
 ];
 
-const QuestionList = ({ question, setQuestion, questionData }) => {
+const QuestionList = ({ question, setQuestion, ans, setAns, questionData }) => {
   // const [question, setQuestion] = useState(0);
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -38,6 +38,8 @@ const QuestionList = ({ question, setQuestion, questionData }) => {
     if (content) setQuestion(content);
     setCurrentStep((prevQuestion) => prevQuestion + 1);
   };
+
+  const handleFinish = (content) => {};
 
   const handleBack = () => {
     setCurrentStep((prevQuestion) => prevQuestion - 1);
@@ -73,12 +75,15 @@ const QuestionList = ({ question, setQuestion, questionData }) => {
                     <div>
                       <Button
                         variant="contained"
-                        onClick={() =>
-                          handleNext(
+                        onClick={
+                          () =>
                             index + 1 < questionData.content.length
-                              ? questionData.content[index + 1]
-                              : null
-                          )
+                              ? handleNext(questionData.content[index + 1])
+                              : handleFinish(null)
+                          // handleNext(
+                          //   index + 1 < questionData.content.length
+                          //     ? questionData.content[index + 1]
+                          //     : null
                         }
                         sx={{ mt: 1, mr: 1 }}
                       >

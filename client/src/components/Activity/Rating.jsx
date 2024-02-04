@@ -8,14 +8,14 @@ const Rating = ({ question, content, mainDesc }) => {
     content?.id === question && (
       <div className="mx-10 my-4 p-10 shadow-lg rounded-2xl bg-white">
         <div className="flex flex-col gap-2">
-          <h1 className="-mb-1 text-yellow-400">
+          <h1 className="-mb-1 text-custL">
             Read the task carefully and answer the questions:
           </h1>
-          <h1 className="mb-4 text-yellow-400 text-sm italic font-medium">
+          <h1 className="mb-4 text-custY text-lg italic font-medium">
             {mainDesc}
           </h1>
-          <h1 className="text-yellow-400 text-xl font-bold">{content.id}</h1>
-          <h1 className="text-yellow-400 text-2xl">{content.desc}</h1>
+          <h1 className="text-custV text-2xl font-semibold">{content.id}</h1>
+          <h1 className="text-xl">{content.desc}</h1>
         </div>
         {console.log(content.img)}
         <div className="basis-1/2 w-full my-4 px-10 flex justify-between gap-20">
