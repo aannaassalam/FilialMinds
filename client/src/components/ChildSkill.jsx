@@ -17,6 +17,42 @@ const skills = [
     value: "singing",
     label: "Singing",
   },
+  {
+    value: "laundry",
+    label: "Laundry",
+  },
+  {
+    value: "communication",
+    label: "Communication",
+  },
+  {
+    value: "money management",
+    label: "Money Management",
+  },
+  {
+    value: "work management",
+    label: "Work Management",
+  },
+  {
+    value: "creativity",
+    label: "Creativity",
+  },
+  {
+    value: "social skills",
+    label: "Social Skills",
+  },
+  {
+    value: "curiosity",
+    label: "Curiosity",
+  },
+  {
+    value: "sharing",
+    label: "Sharing",
+  },
+  {
+    value: "taking on challenges",
+    label: "Taking on Challenges",
+  },
 ];
 
 // Rating Scales
@@ -131,7 +167,7 @@ const ChildSkill = ({ page, setPage, setInput2 }) => {
               size="large"
               onClick={() => setPage(!page)}
               className="bg-blue-600"
-              style={{ width: 100, }}
+              style={{ width: 100 }}
             >
               Back
             </Button>
@@ -142,7 +178,7 @@ const ChildSkill = ({ page, setPage, setInput2 }) => {
               htmlType="submit"
               size="large"
               className="bg-blue-600"
-              style={{ width: 100, }}
+              style={{ width: 100 }}
             >
               Submit
             </Button>
