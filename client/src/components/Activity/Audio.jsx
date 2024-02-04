@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { InputNumber } from "antd";
 
-const Time = ({ question, content, mainDesc }) => {
+const Audio = ({ question, content, mainDesc }) => {
   const [value, setValue] = useState("");
 
   return (
@@ -22,17 +21,9 @@ const Time = ({ question, content, mainDesc }) => {
             className="basis-1/2 w-full my-4 px-10 flex justify-between gap-20"
             // onChange={updateOption}
           >
-            <InputNumber
-              min={1}
-              max={60}
-              placeholder="Enter minutes taken"
-              size="large"
-              value={value}
-              onChange={setValue}
-              className="h-fit w-48 mt-10 text-lg bg-white border-2 border-grey-300 hover:border-white focus:bg-white focus:border-yellow-400"
-              //   defaultValue={3}
-              //   onChange={onChange}
-            />
+            <button className="w-28 px-3 py-2 rounded-lg shadow-md bg-white">
+              Upload Audio
+            </button>
             <img
               src={content.img}
               alt=""
@@ -45,4 +36,4 @@ const Time = ({ question, content, mainDesc }) => {
   );
 };
 
-export default Time;
+export default Audio;

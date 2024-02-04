@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { InputNumber } from "antd";
 
-const Time = ({ question, content, mainDesc }) => {
+const No = ({ question, content, mainDesc }) => {
   const [value, setValue] = useState("");
 
   return (
@@ -24,8 +24,8 @@ const Time = ({ question, content, mainDesc }) => {
           >
             <InputNumber
               min={1}
-              max={60}
-              placeholder="Enter minutes taken"
+              max={1000}
+              placeholder="Enter Number"
               size="large"
               value={value}
               onChange={setValue}
@@ -45,4 +45,4 @@ const Time = ({ question, content, mainDesc }) => {
   );
 };
 
-export default Time;
+export default No;

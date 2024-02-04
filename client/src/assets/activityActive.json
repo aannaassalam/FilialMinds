@@ -1,8 +1,40 @@
 {
   "active": [
-    "Emotional Reactivity",
-    "Logical Reasoning",
-    "Aptitude",
-    "Killing Instinct"
+    {
+      "title": "Alien World",
+      "img": "/activity/activityThumbnails/alienWorld.webp"
+    },
+    {
+      "title": "Chess Mania",
+      "img": "/activity/activityThumbnails/chessMania.webp"
+    },
+    {
+      "title": "Color Sort",
+      "img": "/activity/activityThumbnails/colorSort.webp"
+    },
+    {
+      "title": "Craft a Geo",
+      "img": "/activity/activityThumbnails/craftAGeo.webp"
+    },
+    {
+      "title": "Guess the Object",
+      "img": "/activity/activityThumbnails/guessTheObject.webp"
+    },
+    {
+      "title": "Labeling the Cups",
+      "img": "/activity/activityThumbnails/labellingTheCups.webp"
+    },
+    {
+      "title": "What's on the tray?",
+      "img": "/activity/activityThumbnails/what'sOnTheTray.webp"
+    },
+    {
+      "title": "Narrate a Fairy Tale",
+      "img": "/activity/activityThumbnails/fairyTale.webp"
+    },
+    {
+      "title": "Create a Nature Collage",
+      "img": "/activity/activityThumbnails/natureCollage.webp"
+    }
   ]
 }
