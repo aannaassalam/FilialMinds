@@ -34,7 +34,7 @@ export default function Chatbot() {
           padding: "5px 10px",
           backgroundColor: "#664dd4",
           borderRadius: "8px",
-          borderBottomLeftRadius: 0,
+          borderBottomLeftRadius: "0px",
           color: "#eee",
           marginBottom: "8px",
         }}

@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+.rhap_button-clear svg {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(13%)
+    hue-rotate(160deg) brightness(104%) contrast(105%);
+}
+
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+  background: #7b62f8 !important;
+  opacity: 1 !important;
+}
+
+.rhap_progress-filled,
+.rhap_volume-filled {
+  background: #644dd4 !important;
+}
+
 a {
   text-decoration: none;
 }

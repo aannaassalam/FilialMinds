@@ -7,6 +7,7 @@ import Homepage from "./pages/homepage";
 import Navbar from "./components/navbar";
 import { Typography } from "@mui/material";
 import Footer from "./components/footer/footer";
+import Stories from "./components/stories/stories";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Footer />
       )}
     </>
+    // <Stories />
   );
 }
 
