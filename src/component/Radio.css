@@ -1,0 +1,45 @@
+/* input[type="radio"]{
+    display: none;
+}
+label{
+    position: relative;
+    color: #664DD4;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #664DD4 ;
+    border-radius: 5px;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+label.active{
+    background-color: #664DD4;
+    color: #fff;
+}
+label::before{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    content:"";
+    height: 12px;
+    width: 12px;
+    border: 3px solid #664DD4;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+label.active::before{
+    background-color: #fff;
+    border-color: #fff;
+}
+input[type="radio"]:checked {
+    background-color: #664DD4;
+    color: white;
+
+}
+input[type="radio"]:checked + label::before{
+    height: 16px;
+    width: 16px;
+    border: 10px solid white;
+    background-color: #664DD4;
+} */
