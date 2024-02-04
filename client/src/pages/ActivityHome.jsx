@@ -1,13 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import Activity from "../assets/activityActive.json";
+import Stories from "../components/stories";
 import { Button } from "antd";
 
 const ActivityHome = () => {
-  const activityCategory = "activity";
+  const [activityCategory, setActivityCategory] = useState("activity");
   return (
     <div className=" h-full py-10 pt-24 flex flex-col gap-10 bg-gray-100">
       <div className="w-fit mx-auto px-1 py-1 flex gap-2 rounded-xl shadow-md bg-custY">
         <button
+          onClick={() => setActivityCategory("activity")}
           className={
             activityCategory === "activity"
               ? "w-28 px-3 py-2 rounded-lg shadow-md bg-yellow-50 hover:bg-white"
@@ -17,6 +20,7 @@ const ActivityHome = () => {
           Activity
         </button>
         <button
+          onClick={() => setActivityCategory("games")}
           className={
             activityCategory === "games"
               ? "w-28 px-3 py-2 rounded-lg shadow-md bg-yellow-50 hover:bg-white"
@@ -26,6 +30,7 @@ const ActivityHome = () => {
           Games
         </button>
         <button
+          onClick={() => setActivityCategory("stories")}
           className={
             activityCategory === "stories"
               ? "w-28 px-3 py-2 rounded-lg shadow-md bg-yellow-50 hover:bg-white"
@@ -36,7 +41,11 @@ const ActivityHome = () => {
         </button>
       </div>
 
-      <div className="rounded-3xl grid grid-cols-4 gap-10 mx-20 p-10 shadow-xl bg-white">
+      <div
+        className={`rounded-3xl ${
+          activityCategory !== "stories" && " grid grid-cols-4 gap-10"
+        } mx-20 p-10 shadow-xl bg-white`}
+      >
         {activityCategory === "activity" &&
           Activity.active.map((e) => (
             <button className="flex flex-col p-6 gap-4 items-center rounded-2xl shadow-md shadow-gray-400 bg-custV text-custL text-xl itali hover:-translate-y-4 hover:scale-105 hover:shadow-lg hover:shadow-gray-400 transition-all italic">
@@ -54,12 +63,7 @@ const ActivityHome = () => {
               {name}
             </button>
           ))}
-        {activityCategory === "stories" &&
-          Activity.active.map((name) => (
-            <button className="px-3 py-4 rounded-lg shadow-md bg-custV text-custL">
-              {name}
-            </button>
-          ))}
+        {activityCategory === "stories" && <Stories />}
       </div>
     </div>
   );
