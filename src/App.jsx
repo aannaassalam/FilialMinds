@@ -4,6 +4,8 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import ParentDashboard from "./Pages/ParentDashboard" 
+import Games from "./Pages/Games";
+import Home from "./Pages/Home"
 
 function App() {
   
@@ -25,7 +27,9 @@ function App() {
             {/* login page */}
             {/* dashboard */}
             {/* games */}
-            <Route path="/" Component={ParentDashboard} />
+            <Route path="/parentdashboard" Component={ParentDashboard} />
+            <Route path="/games" Component={Games} />
+            <Route path="/" Component={Home} />
           </Routes>
         </div>
       </QueryClientProvider>
