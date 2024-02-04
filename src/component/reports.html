@@ -1,204 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-span{
-    color: #F6D26F;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      span {
+        color: #f6d26f;
+      }
+      .heading {
+        color: #664dd4;
+        width: 500px;
+        margin: auto;
+        padding: 35px;
 
-}
-.heading{
-    color: #664DD4;
-    width: 500px;
-    margin: auto;
-    padding: 35px;
-    
-    align-items: center;
+        align-items: center;
+      }
 
-}
+      .hero {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
 
-.hero{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+      .heroLeft {
+        width: 50%;
+      }
+      .heroLeft p {
+        font-size: 25px;
+        font-weight: 500;
+      }
 
-.heroLeft{
-    width: 50%;
-    
-}
-.heroLeft p{
-    font-size: 25px;
-    font-weight: 500;
-}
+      .hero img {
+        width: 300px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      .logo {
+        padding: 40px;
+      }
 
-.hero img{
-    width: 300px;
-}
-h2{
-    font-size: 30px;
-}
-.logo{
-    padding: 40px;
-}
+      .activity-report {
+        padding: 80px 0px;
+      }
 
-.activity-report{
-    padding: 80px 0px;
+      .activity-report h2 {
+        margin-bottom: 30px;
+        text-align: center;
+      }
 
-}
-
-.activity-report h2{
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-
-.details{
-    padding: 30px 10px;
-    background-color: #D4C3F2;
-    width: 900px;
-    margin: 20px;
-    border-radius: 8px;
-    margin: auto;
-    margin-bottom: 40px;
-
-  }
+      .details {
+        padding: 30px 10px;
+        background-color: #d4c3f2;
+        width: 900px;
+        margin: 20px;
+        border-radius: 8px;
+        margin: auto;
+        margin-bottom: 40px;
+      }
     </style>
-</head>
-<body>  
+  </head>
+  <body>
     <div class="logo">
-        <img src="./images/Logo.jpeg" alt="">
+      <img src="../assets/images/Logo.jpeg" alt="" />
     </div>
 
     <div class="head">
-        <h1 class="heading"><span>Sadia's</span> Analysis Report</h1>
+      <h1 class="heading"><span>Sadia's</span> Analysis Report</h1>
     </div>
-
 
     <div class="hero">
-        <div class="heroLeft">
-            <p>Name: Sadia Mukhtar</p>
-            <p>Grade: 2</p>
-            <p> Age: 6 years</p>
-        </div>
-         <div>
-            <img src="./images/heroImage.jpg" alt="">
-         </div>
-        
+      <div class="heroLeft">
+        <p>Name: Sadia Mukhtar</p>
+        <p>Grade: 2</p>
+        <p>Age: 6 years</p>
+      </div>
+      <div>
+        <img src="../assets/images/heroImage.jpg" alt="" />
+      </div>
     </div>
-
 
     <div class="activity-report">
-        <h2>Activity Report</h2>
-        <div class="page">
-            <div class="details">
-              <h3>1. Create a Nature Collage: Gather leaves, pebbles, and small sticks from the outdoors. Glue them onto a piece of cardboard or stiff paper. (You can repurpose cereal and cracker boxes for this purpose.)</h3>
-              <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
-              <label> Q1 upload a photo of your nature collage here - </label>
-              <input type="file">
-              <br>
-              <label>Q2 How much time did your child take to do this ?? </label>
-              <textarea></textarea>
-              <br>
-              <label>Q3 Rate your experience here</label>
-              
-            </div>
+      <h2>Activity Report</h2>
+      <div class="page">
+        <div class="details">
+          <h3 style="margin-bottom: 10px">
+            1. Create a Nature Collage: Gather leaves, pebbles, and small sticks
+            from the outdoors. Glue them onto a piece of cardboard or stiff
+            paper. (You can repurpose cereal and cracker boxes for this
+            purpose.)
+          </h3>
+          <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
+          <p style="margin-bottom: 20px">
+            Q1 upload a photo of your nature collage here -
+          </p>
+          <!-- <input type="file" /> -->
+          <img src="../assets/images/collage.jpeg" />
+          <br />
+          <label style="display: block; margin-block: 10px"
+            >Q2 How much time did your child take to do this ??
+          </label>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+            magnam velit, cumque aliquam quasi ducimus nulla, similique voluptas
+            ea repudiandae maiores, cum labore! Minus eligendi sint odio
+            cupiditate itaque eos iste error, deserunt tempora quas vel
+            praesentium autem placeat vero, magni nesciunt soluta, suscipit
+            alias nulla eveniet dolores iusto corporis id enim! Nihil debitis
+            suscipit laborum cum minima iure nulla officiis! Tempora sit vero
+            quis doloribus cum, molestiae placeat blanditiis aperiam consectetur
+            debitis error id amet? Voluptatem itaque natus esse fugit quos
+            quisquam explicabo officiis obcaecati placeat assumenda aliquam
+            reprehenderit, numquam unde. Quas sit enim magnam illo
+            reprehenderit? Inventore nisi quibusdam earum architecto accusantium
+            omnis molestias ratione minima tenetur facilis esse vel minus soluta
+            natus ducimus fuga in corrupti animi, dolore modi doloribus dolores
+            itaque voluptas! Dolorum ab sapiente fuga quasi eos! Doloremque
+            officiis exercitationem quo. Consectetur, placeat praesentium. Vel
+            ipsam nulla expedita? Perspiciatis sit quo saepe a commodi modi in
+            consectetur molestiae odit harum aliquid ducimus, at cumque magnam
+            rem soluta distinctio aspernatur dolores praesentium beatae ullam
+            excepturi atque voluptatibus eius. Tenetur soluta accusamus vel
+            impedit? Ex culpa nostrum mollitia eius ullam libero modi quis
+            repellat alias, quibusdam commodi voluptatum sit cumque minus id
+            odio accusamus hic. Dicta, est.
+          </p>
+          <br />
+          <label>Q3 Rate your experience here</label>
+        </div>
 
-            <div class="details">
-                <h2>2. Get creative and narrate your favorite fairy tale with a twist!</h2>
-                <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p>
-                <label>Q1 Upload the audio file of your narrated fairy tale with a twist here - </label>
-                <input type="file">
-                <br>
-                <label>Q2 How did your child come up with the new storyline or ending?</label>
-                <textarea></textarea>
-                <br>
-                <label>Q3 Did your child enjoy the process of adding a twist to the fairy tale?</label>
-                <!-- <select>
+        <div class="details">
+          <h2 style="margin-bottom: 10px">
+            2. Get creative and narrate your favorite fairy tale with a twist!
+          </h2>
+          <h3 style="margin-bottom: 10px">
+            Create a new storyline or reimagine the ending. Express your
+            imagination and storytelling skills.
+          </h3>
+          <p style="margin-bottom: 10px">
+            Q1 Upload the audio file of your narrated fairy tale with a twist
+            here -
+          </p>
+          <img
+            src="../assets/images/collage.jpeg"
+            style="margin-bottom: 10px"
+          />
+          <br />
+          <p style="margin-bottom: 10px">
+            Q2 How did your child come up with the new storyline or ending?
+          </p>
+          <p style="margin-bottom: 10px">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+            sunt hic officiis distinctio eum accusantium eaque. Modi, quam!
+            Aperiam nulla pariatur dolor quaerat in vero nam, minima vitae saepe
+            debitis repellendus explicabo ex earum provident modi doloremque
+            officiis dolore delectus aut distinctio hic laborum esse ratione.
+            Mollitia dolor, nostrum cumque eius quidem dignissimos dolores
+            debitis hic, voluptate quod atque praesentium rem sed eaque ex?
+            Alias aperiam qui mollitia ipsum libero modi quas tempora cum ipsam
+            eveniet totam soluta animi delectus similique fugit dolores quasi
+            ratione incidunt sint, nulla, illo labore? Explicabo asperiores
+            impedit amet quo doloremque officia tenetur officiis. Repellat?
+          </p>
+          <br />
+          <label
+            >Q3 Did your child enjoy the process of adding a twist to the fairy
+            tale?</label
+          >
+          <p style="margin-top: 10px">Yes</p>
+          <!-- <select>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select> -->
-              </div>
+        </div>
 
-              <div class="details">
-                <h2>3. Present a set of colored objects to your child and encourage them to sort them by color. Once the sorting is complete, snap a photo of the sorted objects and upload it here. 
-                </h2>
-                <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
-                <label>Upload a photo of the sorted objects by color here </label>
-                <input type="file">
-                <br>
-                <label>Q2 How much time did your child take to complete the color sorting activity?</label>
-                <textarea></textarea>
-                <br>
-                <label>Q3 Did your child enjoy the process of sorting the colored objects?</label>
-                <label>Q4 Did your child show any signs of irritation during or after the activity?</label>
-                <textarea></textarea>
-                <br>
-                <!-- <select>
+        <div class="details">
+          <h2>
+            3. Present a set of colored objects to your child and encourage them
+            to sort them by color. Once the sorting is complete, snap a photo of
+            the sorted objects and upload it here.
+          </h2>
+          <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
+          <p style="margin-bottom: 10px">
+            Upload a photo of the sorted objects by color here
+          </p>
+          <img
+            src="../assets/images/collage.jpeg"
+            style="margin-bottom: 10px"
+          />
+          <br />
+          <label
+            >Q2 How much time did your child take to complete the color sorting
+            activity?</label
+          >
+          <p style="margin-top: 10px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            doloremque ducimus cum reiciendis alias non asperiores ipsam vitae
+            quia labore maiores quas modi aut, iusto et ad. Reiciendis nesciunt
+            eaque dignissimos consectetur quam laudantium facere perferendis
+            animi cum fugit maiores corrupti officiis soluta excepturi tempora,
+            nostrum expedita odit, officia sapiente distinctio minus dolorum
+            deleniti. Modi architecto omnis perferendis sapiente! Voluptates,
+            omnis nemo. Culpa veritatis, aliquam praesentium placeat modi
+            repudiandae vitae libero exercitationem cumque error eos quis omnis
+            dicta provident corrupti molestias numquam aut! Enim, voluptas
+            quidem commodi provident eius, aliquam iusto sit non alias corporis,
+            architecto tempore quod veniam earum.
+          </p>
+          <br />
+          <p style="margin-bottom: 10px">
+            Q3 Did your child enjoy the process of sorting the colored objects?
+          </p>
+          <p style="margin-bottom: 10px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum
+            possimus modi nihil consectetur quaerat aliquam expedita quis
+            distinctio? Nobis dolores aliquid obcaecati iusto totam. Laborum
+            quis, odit alias odio, quo omnis error, quas earum expedita nesciunt
+            ab? Voluptatum accusamus esse praesentium voluptate est aliquam
+            eaque quod natus iure unde similique libero autem animi
+            voluptatibus, nulla expedita deserunt exercitationem consequatur
+            quaerat, veniam excepturi distinctio fugit repudiandae beatae!
+            Labore eum fugit consequuntur beatae aspernatur impedit mollitia
+            neque deserunt ad nam odio sed, debitis nesciunt voluptatem eius
+            dignissimos quam doloribus nemo eaque est similique odit nisi quod?
+            Repellendus eius amet accusamus hic.
+          </p>
+          <p style="margin-bottom: 10px">
+            Q4 Did your child show any signs of irritation during or after the
+            activity?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            consectetur iste! Error quis consequatur qui natus? Explicabo sint
+            saepe aliquid perferendis ad labore, hic earum sapiente modi
+            voluptate doloremque nam minus minima quia? Sequi consequatur,
+            fugiat nihil officia voluptatem quae vero accusamus non temporibus
+            culpa natus in quasi dicta, unde nobis exercitationem rerum,
+            excepturi voluptates porro atque vitae quidem fuga. Deleniti nisi
+            aliquam doloremque cum beatae itaque reprehenderit. Alias,
+            temporibus eius! Quis ipsa nam, magnam, officiis ex aspernatur
+            veritatis sed provident harum modi amet dolores illum vero dolore et
+            est, voluptate tenetur nesciunt. Recusandae delectus culpa explicabo
+            eaque eveniet aut?
+          </p>
+          <br />
+          <!-- <select>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select> -->
-              </div>
+        </div>
 
-              <div class="details">
-                <h2> 'What's on the Tray?' Memory Challenge
-                    "Place 10 items on a tray and give your kids only 1 minute to observe. After removing the tray, ask them to write down as many items as they can remember. Upload their list here</h2>
-                <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
-                <label>Q1 How did your child approach remembering the items on the tray? </label>
-                <input type="file">
-                <br>
-                <label>Q2  Did your child miss writing a few or many items from the tray?</label>
-                <textarea></textarea>
-                <br>
-                <label>Q3 How did your child feel about the 'What's on the Tray?' Memory Challenge?</label>
-                <!-- <select>
+        <div class="details">
+          <h2>
+            'What's on the Tray?' Memory Challenge "Place 10 items on a tray and
+            give your kids only 1 minute to observe. After removing the tray,
+            ask them to write down as many items as they can remember. Upload
+            their list here
+          </h2>
+          <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
+          <p style="margin-bottom: 10px">
+            Q1 How did your child approach remembering the items on the tray?
+          </p>
+          <img
+            src="../assets/images/collage.jpeg"
+            style="margin-bottom: 10px"
+          />
+          <br />
+          <p style="margin-bottom: 10px">
+            Q2 Did your child miss writing a few or many items from the tray?
+          </p>
+          <p style="margin-bottom: 10px">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et autem
+            rerum ipsa ipsam praesentium porro qui, architecto, quae inventore
+            nobis quasi perspiciatis nemo. Blanditiis, sunt iusto. Molestias non
+            debitis sunt, id assumenda magnam sit eius vitae laboriosam, aperiam
+            distinctio veniam, quisquam praesentium excepturi dolore nesciunt
+            modi corporis maiores eos minus voluptas expedita ratione! Earum hic
+            fuga dolorum, rem voluptatum voluptatibus excepturi quibusdam sed
+            iste autem neque voluptas atque delectus ut asperiores libero quam
+            necessitatibus obcaecati quasi eligendi. Ratione ipsa praesentium
+            totam ut sapiente doloribus libero deleniti dignissimos repellendus
+            quia molestiae velit laudantium explicabo, aliquid aspernatur atque
+            modi, optio, molestias at!
+          </p>
+          <br />
+          <p style="margin-bottom: 10px">
+            Q3 How did your child feel about the 'What's on the Tray?' Memory
+            Challenge?
+          </p>
+          <p style="margin-bottom: 10px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            voluptas quasi quo fugiat soluta quisquam iure nihil, nam veritatis,
+            exercitationem labore temporibus ducimus hic voluptate cumque
+            tempore veniam accusamus molestias? Praesentium perspiciatis
+            consequatur quibusdam quos magni ipsam error maxime. Optio soluta
+            nam sapiente perspiciatis, pariatur asperiores ipsam repellendus
+            explicabo quidem.
+          </p>
+          <!-- <select>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select> -->
-              </div>
+        </div>
 
-              <div class="details">
-                <h2>Engage in a drawing activity! For example, draw an alien world. Unleash your creativity and showcase your artistic skills.</h2>
-                <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
-                <label>Q1 Upload your drawing of the alien world here -</label>
-                <input type="file">
-                <br>
-                <label>Q2 Did your child express enjoyment or challenges while drawing the alien world?</label>
-                <textarea></textarea>
-                <br>
-                <label>Q3  What was your child's favorite part of the drawing activity?</label>
-                <select>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
+        <div class="details">
+          <h2>
+            Engage in a drawing activity! For example, draw an alien world.
+            Unleash your creativity and showcase your artistic skills.
+          </h2>
+          <!-- <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p> -->
+          <p style="margin-bottom: 10px">
+            Q1 Upload your drawing of the alien world here -
+          </p>
+          <img
+            src="../assets/images/collage.jpeg"
+            style="margin-bottom: 10px"
+          />
+          <br />
+          <p style="margin-bottom: 10px">
+            Q2 Did your child express enjoyment or challenges while drawing the
+            alien world?
+          </p>
+          <p style="margin-bottom: 10px;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            facere quaerat! Iure aspernatur quos sit expedita dolorum distinctio
+            quia illo consectetur molestias quibusdam commodi, ut perferendis
+            aliquam quod. Facilis corrupti quisquam voluptas aliquam eos ut
+            tempora, animi omnis amet. Aspernatur distinctio unde dicta quos
+            nesciunt laboriosam deleniti quae quaerat fuga.
+          </p>
+          <br />
+          <p style="margin-bottom: 10px">
+            Q3 What was your child's favorite part of the drawing activity?
+          </p>
+          <p style="margin-bottom: 10px;"">Yes</p>
+        </div>
 
-              <div class="details">
-                <h2>2. Get creative and narrate your favorite fairy tale with a twist!</h2>
-                <p>Create a new storyline or reimagine the ending. Express your imagination and storytelling skills.</p>
-                <label>Q1 Upload the audio file of your narrated fairy tale with a twist here - </label>
-                <input type="file">
-                <br>
-                <label>Q2 How did your child come up with the new storyline or ending?</label>
-                <textarea></textarea>
-                <br>
-                <label>Q3 Did your child enjoy the process of adding a twist to the fairy tale?</label>
-                <select>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-          </div>
-
+        <div class="details">
+          <h2>
+            2. Get creative and narrate your favorite fairy tale with a twist!
+          </h2>
+          <p>
+            Create a new storyline or reimagine the ending. Express your
+            imagination and storytelling skills.
+          </p>
+          <p style="margin-bottom: 10px;"
+            >Q1 Upload the audio file of your narrated fairy tale with a twist
+            here -
+          </p>
+          <img
+            src="../assets/images/collage.jpeg"
+            style="margin-bottom: 10px"
+          />
+          <br />
+          <p style="margin-bottom: 10px;"
+            >Q2 How did your child come up with the new storyline or
+            ending?</p
+          >
+          <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi provident cupiditate adipisci mollitia. A, impedit ullam voluptatibus alias nostrum enim, deserunt placeat, quis illo praesentium dolorum vero blanditiis! Dignissimos minima eligendi quasi quidem id odit dolores sed accusantium pariatur! Obcaecati placeat officiis culpa repudiandae asperiores, veniam eos consectetur aliquid!</p>
+          <br />
+          <p style="margin-bottom: 10px;"
+            >Q3 Did your child enjoy the process of adding a twist to the fairy
+            tale?</p
+          >
+          <p style="margin-bottom: 10px;">Yes</p>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
