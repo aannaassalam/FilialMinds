@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .common-button {
   background-color: #664dd4 !important;
   padding-block: 10px !important;

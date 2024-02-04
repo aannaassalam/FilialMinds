@@ -22,6 +22,30 @@ export default function Login() {
         <img src={pattern} alt="" />
       </Box>
       <Box className="right">
+        <Button
+          variant="outlined"
+          sx={{
+            borderColor: "#664dd4 !important",
+            alignSelf: "flex-start",
+            borderRadius: "20px",
+            fontSize: "12px !important",
+            textTransform: "none",
+            color: "#664dd4",
+            position: "absolute",
+            top: "20px",
+            left: "20px",
+            "&:hover": {
+              backgroundColor: "rgb(102, 77, 212, 0.04)",
+            },
+          }}
+          onClick={() => navigate("/")}
+        >
+          <i
+            className="fa-solid fa-chevron-left"
+            style={{ marginRight: "5px", color: "#664dd4" }}
+          ></i>
+          Home
+        </Button>
         <Typography variant="h2">
           Filial<Typography variant="caption">Minds</Typography>
         </Typography>

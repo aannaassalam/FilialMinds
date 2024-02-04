@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 40px 130px;
+  position: relative;
 }
 
 .right h2 {

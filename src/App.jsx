@@ -1,17 +1,30 @@
 import { useState } from "react";
 import "./App.css";
 import Login from "./pages/login";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Register from "./pages/register/register";
+import Homepage from "./pages/homepage";
+import Navbar from "./components/navbar";
+import { Typography } from "@mui/material";
+import Footer from "./components/footer/footer";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const location = useLocation();
 
   return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-    </Routes>
+    <>
+      {location.pathname !== "/register" && location.pathname !== "/login" && (
+        <Navbar />
+      )}
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+      {location.pathname !== "/register" && location.pathname !== "/login" && (
+        <Footer />
+      )}
+    </>
   );
 }
 

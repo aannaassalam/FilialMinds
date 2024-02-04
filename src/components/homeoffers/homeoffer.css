@@ -1,0 +1,53 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #664dd4;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #fff;
+  border-color: #664dd480;
+}
+
+.card:hover .card_icon {
+  color: #555;
+  background-color: #664dd420;
+}
+
+.card:hover .card_text {
+  color: #664dd4;
+}
+
+.card:hover .card_subtitle {
+  color: #555;
+}
+
+.card_icon {
+  background-color: #f2edfa40;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  color: #fff;
+  align-self: flex-end;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.card_text {
+  width: 30%;
+  font-family: "Protest Riot", sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.card_subtitle {
+  color: #f2edfa;
+  transition: all 0.3s ease;
+}
