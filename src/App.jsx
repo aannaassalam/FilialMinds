@@ -12,6 +12,10 @@ import ChildDashboard from "./pages/ChildDashboard";
 import Games from "./pages/Games";
 import ParentChild from "./pages/ParentChild";
 import ParentDashboard from "./pages/ParentDashboard";
+import GamesSec from "./pages/gamesSec";
+// import Activity from "./pages/Activity";
+// import ActivityHome from "./pages/ActivityHome";
+// import ChildForm from "./pages/ChildForm";
 
 function App() {
   const location = useLocation();
@@ -29,6 +33,35 @@ function App() {
         <Route path="/parent-child" element={<ParentChild />} />
         <Route path="/parent-dashboard" element={<ParentDashboard />} />
         <Route path="/games" element={<Games />} />
+        <Route
+          path="/games/chess"
+          element={<GamesSec cdn="https://cdn.htmlgames.com/Chess/" />}
+        />
+        <Route
+          path="/games/illuminate"
+          element={<GamesSec cdn="https://cdn.htmlgames.com/Illuminate1/" />}
+        />
+        <Route
+          path="/games/chocolate-factory"
+          element={
+            <GamesSec cdn="https://cdn.htmlgames.com/ChocolateFactory/" />
+          }
+        />
+        <Route
+          path="/games/fruit-cubes"
+          element={<GamesSec cdn="https://cdn.htmlgames.com/FruitCubes/" />}
+        />
+        <Route
+          path="/games/flower-burst"
+          element={<GamesSec cdn="https://cdn.htmlgames.com/FlowerBurst/" />}
+        />
+        {/* <Route
+          path="/games/chess"
+          element={<GamesSec cdn="https://cdn.htmlgames.com/Chess/" />}
+        /> */}
+        {/* <Route path="/activity" element={<Activity />} />
+        <Route path="/activity-home" element={<ActivityHome />} />
+        <Route path="/child-form" element={<ChildForm />} /> */}
         {/* <Route path="/games" element={<Games />} /> */}
       </Routes>
       {location.pathname !== "/register" && location.pathname !== "/login" && (
