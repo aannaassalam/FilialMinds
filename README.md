@@ -1,8 +1,7 @@
-# React + Vite
+# Filial Minds
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was built during Diversion 2k24 hackathon. It is a B2B web application product which thrives on the intersection of child specialists/therapists/pshycologists and children.
 
-Currently, two official plugins are available:
+## You can find the app:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Hosted here!](https://www.filialminds.biz)
